@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>STAR NEWS</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="logo">
+                <img src="images/Graphics Clipart Transparent PNG Hd, Star Logo Icon Graphic Design Template Vector, Star Icons, Logo Icons, Template Icons PNG Image For Free Download.jpeg" alt="STARNEWS"></a>
+                <p class="name" id="name">STAR NEWS</p>
+        <div class="nav-links " id="nav-links">
+            <ul>
+                <li class="hover-links nav-item"><a href="#" id="ipl"onclick="onNavItemClick('ipl')">IPL</a></li>
+                <li class="hover-links nav-item"><a href="#" id="finance" onclick="onNavItemClick('finance')">FINANCE</a></li>
+                <li class="hover-links nav-item"><a href="#" id="politics" onclick="onNavItemClick('politics')">POLITICS</a></li>
+                <li class="hover-links nav-item"><a href="#" id="technology" onclick="onNavItemClick('technology')">TECHNOLOGY</a></li>
+            </ul>
+        </div>
+        <div class="main flex">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+            <button id="search-button" class="search-button">search</button>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </div>
+</nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+           
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400*200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores commodi dignissimos id eum ex, enim aliquid quos doloremque praesentium aliquam deleniti, cupiditate pariatur, eos esse reiciendis repudiandae quaerat quasi ut?</p>
+            </div>
+        </div>
+    </template>
+    <footer>
+        <div class = "footer-container">
+            <div class = "footer-left">
+                <h2>STAR NEWS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias aut blanditiis totam quia enim, autem tenetur cum facere, fugit beatae at voluptas ipsum perferendis!</p>
+            </div>
+
+            <div class = "footer-right">
+                <h2>Newletter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, autem!</p>
+
+                <div>
+                    <input type = "text" placeholder = "Email Address">
+                    <i class = "bx bxs-envelope"></i>
+                </div>
+            </div>
+        </div>
+
+        <p>Copyright &copy; 2025 All rights reserved </p>
+    </footer> 
+    <script src="app.js"></script>
+</body>
+</html>
